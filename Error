@@ -1,0 +1,16 @@
+what do you mean by---
+--image : The path to the image to be OCR’d.
+--reference : The path to the reference OCR-A image. 
+This image contains the digits 0-9 in the OCR-A font, thereby allowing us to perform template matching later in the pipeline.
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-i", "--image", required=True,
+	help="path to input image")
+ap.add_argument("-r", "--reference", required=True,
+	help="path to reference OCR-A image")
+args = vars(ap.parse_args())
+
+Error Problem --
+usage: scan.py [-h] -i BANK.PNG
+scan.py: error: argument -i/--bank.png is required
+plz solve me my problem
